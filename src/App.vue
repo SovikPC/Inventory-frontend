@@ -1,8 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">EquipmentList</router-link> |
-  </nav>
+  <header>
+    <nav>
+      <router-link to="/">EquipmentList</router-link> |
+      <router-link to="/users">UserList</router-link> |
+    </nav>
+  </header>
   <router-view/>
+  <footer>
+    <h1>Здесь footer</h1>
+  </footer>
 </template>
 
 <style>
