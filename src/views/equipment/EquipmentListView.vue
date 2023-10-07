@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-<div class="equipment">
+<div class="container">
   <EquipmentList/>
 </div>
 </template>
