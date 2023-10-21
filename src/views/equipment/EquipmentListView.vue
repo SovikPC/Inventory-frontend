@@ -2,7 +2,7 @@
 import EquipmentList from '@/components/equipment/EquipmentList.vue'
 
 export default {
-  name: 'EquipmentView',
+  name: 'EquipmentListView',
   components: {
     EquipmentList
   }

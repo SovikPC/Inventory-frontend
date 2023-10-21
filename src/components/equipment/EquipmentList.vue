@@ -23,6 +23,7 @@ export default {
 </script>
 
 <template>
+<router-link to="/equipment/add">AddEquipment</router-link>
 <table class="table table-striped">
   <thead>
   <tr>
@@ -43,7 +44,7 @@ export default {
   <tbody>
   <tr v-for="equipment in equipments" v-bind:key="equipment.id">
     <td>{{num++}}</td>
-    <td>{{equipment.name}}</td>
+    <td><a :href="'/equipment/'+equipment.id">{{equipment.name}}</a></td>
     <td>{{equipment.model.manufacturies.name}}</td>
     <td>{{equipment.model.name}}</td>
     <td>{{equipment.description}}</td>
@@ -52,7 +53,7 @@ export default {
     <td>{{equipment.serial}}</td>
     <td>{{equipment.position.name}}</td>
     <td>{{equipment.comments}}</td>
-    <td>{{equipment.price}}</td>
+    <td>{{equipment.price}} руб.</td>
     <td>{{equipment.state.name}}</td>
   </tr>
   </tbody>
